@@ -56,7 +56,7 @@ ENDIF (NOT PKGCONFIG_INSTALL_DIR)
 
 # where to look first for cmake modules, before ${CMAKE_ROOT}/Modules/ is checked
 SET (CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/modules)
-INSTALL( FILES ${CMAKE_MODULE_PATH}/FindLibSolv.cmake DESTINATION ${CMAKE_INSTALL_PREFIX}/share/cmake/Modules )
+INSTALL( FILES ${CMAKE_MODULE_PATH}/FindLibSolv.cmake DESTINATION ${CMAKE_INSTALL_PREFIX}/share/cmake/libsolv )
 
 # for shared libraries on windows (DLLs), we just export all symbols for now
 SET(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
